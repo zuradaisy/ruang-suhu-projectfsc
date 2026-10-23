@@ -151,7 +151,7 @@ button:focus-visible {
     font-weight: 500;
     text-decoration: none;
     transition: color 0.3s ease;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: -1px;
 }
 
