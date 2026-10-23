@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Suhu</title>
+
+    <!-- Font Outfit dari Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- script.js sudah terhubung. "defer" artinya dijalankan setelah HTML selesai dimuat -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar" aria-label="Menu utama">
+            <a href="#beranda" class="logo">
+                <i class="fa-solid fa-arrows-to-dot"></i>
+                <span>Ruang Suhu</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#beranda">BERANDA</a></li>
+                <li><a href="#tentang">TENTANG</a></li>
+                <li><a href="#layanan">LAYANAN</a></li>
+                <li><a href="#langganan">LANGGANAN</a></li>
+                <li><a href="#kontak">KONTAK</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="dark-toggle" type="button" aria-label="Ganti Mode Tampilan"><i
+                        class="fa-solid fa-circle-half-stroke"></i></button>
+                <a href="#langganan" class="btn btn-primary nav-cta">Tanya Mentor</a>
+                <button class="hamburger" type="button" aria-label="Buka Menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="beranda">
+            <div class="container">
+                <h1>Ruang Santai Temukan Mentor Tech-mu</h1>
+                <p>
+                    Butuh teman diskusi buat urusan coding, desain UI/UX, AI, atau keamanan jaringan? Temukan mentor yang sesuai dan bahas kendalamu lewat sesi 1-on-1.
+                </p>
+                <div class="hero-cta">
+                    <a href="#langganan" class="btn btn-primary">Cari Teman Mentor</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARA KERJA -->
+        <section class="about" id="tentang">
+            <div class="container">
+                <div class="section-header">
+                    <h2>HOW IT WORKS</h2>
+                </div>
+                <div class="grid-3">
+                    <div class="card card-step">
+                        <span class="step-num">01.</span>
+                        <h3>Ceritakan Kendalamu</h3>
+                        <p>Kirimkan kodingan yang <em>error</em>, desain Figma yang membingungkan, atau topik tech yang ingin kamu kuasai dari nol.</p>
+                    </div>
+                    <div class="card card-step">
+                        <span class="step-num">02.</span>
+                        <h3>Match Teman Mentor</h3>
+                        <p>Pilih temen mentor yang vibenya cocok dan siap membantu kamu melalui Google Meet atau Discord.
+                        </p>
+                    </div>
+                    <div class="card card-step">
+                        <span class="step-num">03.</span>
+                        <h3>Selesaikan Bareng</h3>
+                        <p>Diskusi 1-on-1 yang santai sampai masalahmu beres, lengkap dengan catatan dan rekomendasi langkah berikutnya.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LAYANAN -->
+        <section class="services" id="layanan">
+            <div class="container">
+                <div class="section-header">
+                    <h2>EXPLORE OUR EXPERTISE</h2>
+                </div>
+                <div class="grid-split">
+                    <ul class="menu-card">
+                        <li>
+                            <button type="button" class="menu-item" data-img="https://images.unsplash.com/photo-1602576666092-bf6447a729fc?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" data-title="UI/UX Design" data-desc="Rancang pengalaman pengguna lewat user research, wireframing, dan prototyping di Figma. Pelajari cara menyusun user flow, membangun design system, dan mengevaluasi usability desainmu."
+                                data-link="layanan/ui-ux.html">
+                                <i class="fa-solid fa-arrow-right menu-icon"></i>
+                                UI/UX Design
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="menu-item active" data-img="https://images.unsplash.com/photo-1579389083395-4507e98b5e67?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" data-title="Web Development" data-desc="Pelajari HTML, CSS, JavaScript, React, hingga backend development. Bahas debugging, responsive layout, API integration, dan error saat development."
+                                data-link="layanan/web-dev.html">
+                                <i class="fa-solid fa-arrow-right menu-icon"></i>
+                                Web Development
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="menu-item" data-img="https://images.unsplash.com/photo-1583766165050-e94b9608cc62?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" data-title="Machine Learning" data-desc="Kenali Python, Pandas, scikit-learn, dan TensorFlow. Bahas preprocessing data, training model, evaluasi performa, hingga debugging pipeline machine learning."
+                                data-link="layanan/machine-learning.html">
+                                <i class="fa-solid fa-arrow-right menu-icon"></i>
+                                Machine Learning & AI
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="menu-item" data-img="https://images.unsplash.com/photo-1637073849667-91120a924221?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" data-title="Cyber Security" data-desc="Eksplorasi network security, Linux, penetration testing di lingkungan legal, dan vulnerability assessment. Diskusikan konfigurasi jaringan serta analisis celah keamanan."
+                                data-link="layanan/cyber-security.html">
+                                <i class="fa-solid fa-arrow-right menu-icon"></i>
+                                Cyber Security
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="menu-item" data-img="https://images.unsplash.com/photo-1586296835409-fe3fe6b35b56?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" data-title="Mobile Development" data-desc="Wujudkan ide aplikasi dengan Flutter, Dart, Kotlin, atau React Native. Bahas implementasi UI, state management, integrasi API, dan troubleshooting di perangkat mobile."
+                                data-link="layanan/mobile-development.html">
+                                <i class="fa-solid fa-arrow-right menu-icon"></i>
+                                Mobile Development
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="menu-item" data-img="https://images.unsplash.com/photo-1565350897149-38dfafa81d83?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" data-title="Game Development" data-desc="Eksplorasi Unity, Unreal Engine, C#, dan dasar game programming. Diskusikan game mechanics, collision detection, scripting, serta debugging gameplay."
+                                data-link="layanan/game-development.html">
+                                <i class="fa-solid fa-arrow-right menu-icon"></i>
+                                Game Development
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="menu-item" data-img="https://images.unsplash.com/photo-1558137623-ce933996c730?q=80&w=1106&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" data-title="Robotics" data-desc="Hubungkan perangkat fisik dengan program melalui Arduino, ESP32, dan sensor. Pelajari komunikasi ant perangkat, pengiriman data menggunakan MQTT, serta troubleshooting hardware dan koneksi."
+                                data-link="layanan/robotics.html">
+                                <i class="fa-solid fa-arrow-right menu-icon"></i>
+                                Robotics & IoT
+                            </button>
+                        </li>
+                    </ul>
+
+                    <a href="layanan/web-dev.html" class="preview-card" id="preview-link">
+                        <img id="preview-img" src="https://images.unsplash.com/photo-1579389083395-4507e98b5e67?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Web & Mobile Dev">
+                        <div class="preview-overlay">
+                            <h3 id="preview-title">Web Development</h3>
+                            <p id="preview-desc">Pelajari HTML, CSS, JavaScript, React, hingga backend development. Bahas debugging, responsive layout, API integration, dan error saat development.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- CTA-->
+        <section class="cta">
+            <div class="container cta-grid">
+                <div class="section-header">
+                </div>
+                <p class="cta-title">Biar jelas, obrolin kendalamu bareng <mark>mentor</mark> di RuangSuhu sekarang!
+                </p>
+            </div>
+        </section>
+
+        <!-- LANGGANAN -->
+        <section class="pricing" id="langganan">
+            <div class="container">
+                <div class="section-header">
+                    <h2>FIND YOUR PLAN</h2>
+                </div>
+
+                <div class="grid-3">
+                    <article class="card card-price">
+                        <div class="card-header">
+                            <h3>Sesi Quick Fix</h3>
+                            <p class="plan-desc">Solusi kilat buat kamu yang butuh bantuan debugging error, review kodingan, atau tanya jawab singkat 1 topik.</p>
+                        </div>
+
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-check"></i> 1x Sesi Konsultasi (60 Menit)</li>
+                            <li><i class="fa-solid fa-check"></i> Review kode atau desain</li>
+                            <li><i class="fa-solid fa-check"></i> Catatan & Rekomendasi Mentor</li>
+                        </ul>
+
+                        <a href="https://wa.me/nomorhp" class="btn btn-secondary">
+                            Pilih Paket <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </article>
+
+                    <article class="card card-price featured">
+                        <div class="card-header">
+                            <h3>Pro Mentor</h3>
+                            <p class="plan-desc">Pendampingan berkala untuk mengembangkan skill, menyelesaikan proyek, atau membangun portofolio.</p>
+                        </div>
+
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-check"></i> 4x Sesi Mentoring 1-on-1 / bulan</li>
+                            <li><i class="fa-solid fa-check"></i> Prioritas Q&A via WhatsApp</li>
+                            <li><i class="fa-solid fa-check"></i> Pendampingan proyek atau portofolio</li>
+                            <li><i class="fa-solid fa-check"></i> Evaluasi progres dan feedback</li>
+                        </ul>
+
+                        <a href="https://wa.me/nomorhp" class="btn btn-secondary">
+                            Pilih Paket <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </article>
+
+                    <article class="card card-price">
+                        <div class="card-header">
+                            <h3>Intensive Bootcamp</h3>
+                            <p class="plan-desc">Program pendampingan dari nol sampai jago.</p>
+                        </div>
+
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-check"></i> Jadwal Mentoring Fleksibel</li>
+                            <li><i class="fa-solid fa-check"></i> Materi belajar terstruktur</li>
+                            <li><i class="fa-solid fa-check"></i> Latihan dan praktik langsung</li>
+                            <li><i class="fa-solid fa-check"></i> Feedback dan evaluasi hasil belajar</li>
+                        </ul>
+
+                        <a href="https://wa.me/nomorhp" class="btn btn-secondary">
+                            Pilih Paket <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer" id="kontak">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="fa-solid fa-arrows-to-dot"></i>
+                    <span>Ruang Suhu</span>
+                </div>
+                <p>Find your space and innovate</p>
+            </div>
+
+            <ul class="footer-contact">
+                <li>
+                    <a href="https://instagram.com/ruang_suhu" target="_blank" rel="noopener noreferrer">
+                        @ruang_suhu <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://wa.me/6281200000000" target="_blank" rel="noopener noreferrer">
+                        0812-0000-0000 <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="mailto:hello@innovaspace.example">
+                        hello@ruangsuhu.example <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p class="copyright">Website project Frontend Starter Camp 2026, Basic Computing Community FILKOM UB.
+            <span>© 2026 ruang suhu</span>
+        </p>
+    </footer>
+
+</body>
+
+</html>
